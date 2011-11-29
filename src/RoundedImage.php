@@ -178,6 +178,9 @@
                     $y1 = $yo + $ym * $y;
                     $this->setPixelAlpha($x1, $y1, $a);
 
+                    // if about to run over same pixel, abort
+                    if ( $x === $r - $y - 1 ) break;
+
                     $x1 = $xo + $xm * ($r - $y - 1);
                     $y1 = $yo + $ym * ($r - $x - 1);
                     $this->setPixelAlpha($x1, $y1, $a);
