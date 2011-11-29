@@ -104,10 +104,10 @@ $options .= "\n     ";
    div.settings var.tr {
     color: #F08030;
    }
-   div.settings var.bl {
+   div.settings var.br {
     color: #C000C0;
    }
-   div.settings var.br {
+   div.settings var.bl {
     color: #6090C0;
    }
    div.settings li {
@@ -208,12 +208,12 @@ $options .= "\n     ";
    <h1>Image Rounder</h1>
    <form onsubmit="return getImage()" action="img.php" method="post">
     <p>Select the image you wish to round, or upload a new one. When you are ready to begin, enter the radii of the curves you want. The radii field below takes up to four comma seperated values, in the order:</p>
-    <p style="font-style: italic;"><var class="tl">top-left</var> [, <var class="tr">top-right</var> [, <var class="bl">bottom-left</var> [, <var class="br">bottom-right</var> ]]]</p>
+    <p style="font-style: italic;"><var class="tl">top-left</var> [, <var class="tr">top-right</var> [, <var class="br">bottom-right</var> [, <var class="bl">bottom-left</var> ]]]</p>
     <p>When not explicitly set;</p>
     <ul>
      <li><var class="small tr">top-right</var><span>defaults to <var class="tl">top-left</var></span></li>
-     <li><var class="small bl">bottom-left</var><span>defaults to <var class="tl">top-left</var></span></li>
-     <li><var class="small br">bottom-right</var><span>defaults to <var class="tr">top-right</var></span></li>
+     <li><var class="small br">bottom-right</var><span>defaults to <var class="tl">top-left</var></span></li>
+     <li><var class="small bl">bottom-left</var><span>defaults to <var class="tr">top-right</var></span></li>
     </ul>
     <div class="clear"></div>
     <div class="field">

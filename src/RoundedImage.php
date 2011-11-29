@@ -104,9 +104,9 @@
    if ( $r2 > 0 )
     $this->round( $this->w - $r2,              0, $r2,    RoundedImage::TOP_RIGHT);
    if ( $r3 > 0 )
-    $this->round(              0, $this->h - $r3, $r3,  RoundedImage::BOTTOM_LEFT);
+    $this->round( $this->w - $r3, $this->h - $r3, $r3, RoundedImage::BOTTOM_RIGHT);
    if ( $r4 > 0 )
-    $this->round( $this->w - $r4, $this->h - $r4, $r4, RoundedImage::BOTTOM_RIGHT);
+    $this->round(              0, $this->h - $r4, $r4,  RoundedImage::BOTTOM_LEFT);
   }
 
   // Encodes the canvas to png24 and returns the data as a string
